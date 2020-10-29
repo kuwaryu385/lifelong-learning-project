@@ -1,11 +1,42 @@
 package practicesukiri;
 
+//public class Main {
+//
+//	public static void main(String[] args) {
+//
+//
+//
+//	}
+//}
+
 public class Main {
 
 	public static void main(String[] args) {
 
 	}
 }
+
+//replaceAll()メソッドを使った文字列の置換
+
+//public class Main {
+//	public static void main(String[] args) {
+//		String s = "abc,def:ghi";
+//		String w = s.replaceAll("[abdehi]", "X");
+//		System.out.println(w);//Xを挿入しよくあるコード進行を残すｃｆｇ
+//	}
+//}
+
+//split()メソッドを使った文字列の分割
+//public class Main {
+//	public static void main(String[] args) {
+//		String s = "abc,def:ghi";
+//		String[] words = s.split("[,:]");//正規表現パターン
+//		for (String w : words) {
+//			System.out.print(w + "->");//次の文字列のところにうこの文字を挿入置換
+//		}
+//
+//	}
+//}
 
 //文字列パターンを用いたペット名のチェック
 //Stringクラスのmatches()メソッドの使用
@@ -16,7 +47,6 @@ public class Main {
 
 //StringBuilderを利用し文字列を１万回無駄ラッシュを表示する
 //public class Main {
-//
 //	public static void main(String[] args) {
 //		StringBuilder sb = new StringBuilder();
 //		for (int i = 0; i < 10000; i++) {
@@ -24,7 +54,6 @@ public class Main {
 //		}
 //		String s = sb.toString();
 //		System.out.println(s);
-//
 //	}
 //
 //}
