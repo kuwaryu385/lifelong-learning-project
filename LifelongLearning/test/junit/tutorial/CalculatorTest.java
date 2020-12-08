@@ -42,4 +42,33 @@ public class CalculatorTest {
 		calc.divide(5, 0);
 	}
 
+	//assertThatによる比較検証
+	@SuppressWarnings("deprecation")
+	@Test
+	public void assertion() {
+		String actual = "Hello" + " " + "World";
+		assertThat(actual, is("Hello World"));
+	}
+
 }
+
+//Testアノテーションの利用サンプルｐ59
+//	@Test
+//	public void addに3と4を与えると7を返す() throws Exception {
+//		//SetUp - 初期化 事前準備
+//		Calculator sut = new Calculator();
+//		sut.init();
+//		//Exercise- テストの実行
+//		int actual = sut.add(3, 4);
+//		//Verify - 検証
+//		assertThat(actual, is(7));
+//		//TearDown - 後処理
+//		sut.shutdown();
+//	}
+//Testアノテーションのexpected属性
+//	@Test(expected = IllegalArgumentException.class)
+//	public void 例外テスト() throws Exception {
+//		sut.doSomething();
+//	}
+//
+//}
