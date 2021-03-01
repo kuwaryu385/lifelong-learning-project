@@ -29,7 +29,7 @@ public class CalculatorTest {
 
 	@SuppressWarnings("deprecation")
 	@Test
-	public void multiplyで3と2の除算結果が取得できる() {
+	public void divideで3と2の除算結果が取得できる() {
 		Calculator calc = new Calculator();
 		float expected = 1.5f;
 		float actual = calc.divide(3, 2);
@@ -42,13 +42,29 @@ public class CalculatorTest {
 		calc.divide(5, 0);
 	}
 
-	//assertThatによる比較検証
+	//assertThatによる比較検証p６１
 	@SuppressWarnings("deprecation")
 	@Test
 	public void assertion() {
 		String actual = "Hello" + " " + "World";
 		assertThat(actual, is("Hello World"));
 	}
+
+	//	@Test(expected = IllegalArgumentException.class)
+	//	public void timeoutがtureのときにロジックが実行されないこと() {
+	//		//SetUp
+	//		Runnable logic = new Runnable() {
+	//
+	//			@Override
+	//			public void run() {
+	//				fail("runがバレてしまった");
+	//
+	//			}
+	//		};
+	//		sut.timeOut = true;
+	//		//Execise
+	//		sut.invoke(logic);
+	//	}
 
 }
 
